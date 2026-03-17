@@ -111,7 +111,7 @@ input:checked + .slider:before {
 
 .hero {
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/hero-bg.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/img/bg1.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -152,11 +152,6 @@ input:checked + .slider:before {
     color: white;
 }
 
-.btn-outline {
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
-}
 
 .problem {
     padding: 5rem 2rem;
