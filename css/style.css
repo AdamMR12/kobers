@@ -116,14 +116,13 @@ input:checked + .slider:before {
     background-position: center;
     display: flex;
     align-items: center;
-    justify-content: left;
-    text-align: left;
+    justify-content: center;
+    text-align: center;
     color: white;
 }
 
 .hero-content h1 {
     font-size: 3rem;
-    padding-left: 20rem;
     margin-bottom: 2rem;
     line-height: 1.2;
 }
@@ -131,7 +130,7 @@ input:checked + .slider:before {
 .hero-buttons {
     display: flex;
     gap: 1rem;
-    justify-content: left;
+    justify-content: center;
     padding-left: 20rem;
 }
 
