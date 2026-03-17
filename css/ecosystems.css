@@ -322,17 +322,20 @@ body {
 .terrestrial-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 0.8rem;
-    margin-top: 1.2rem;
+    gap: 1rem;
+    margin-top: 1.5rem;
 }
 
 .terrestrial-card {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    padding: 0.8rem;
-    border-radius: 10px;
+    padding: 1rem;
+    border-radius: 12px;
     text-align: center;
     transition: transform 0.3s;
+    /* PENTING: bungkus teks */
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .terrestrial-card:hover {
@@ -631,7 +634,16 @@ li {
     
     .terrestrial-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 0.8rem;
+    }
+    
+    .terrestrial-card h3 {
+        font-size: 0.9rem;
+        word-break: break-word;
+    }
+    
+    .terrestrial-card p {
+        font-size: 0.7rem;
+        word-break: break-word;
     }
     
     /* Energy Flow vertical */
@@ -718,14 +730,6 @@ li {
         font-size: 1.8rem;
     }
     
-    .terrestrial-card h3 {
-        font-size: 0.8rem;
-    }
-    
-    .terrestrial-card p {
-        font-size: 0.65rem;
-    }
-    
     /* Strategy tags */
     .strategies {
         gap: 0.5rem;
@@ -758,30 +762,27 @@ li {
     
     .terrestrial-grid {
         grid-template-columns: 1fr;
-        gap: 0.6rem;
     }
     
     .terrestrial-card {
-        display: grid;
-        grid-template-columns: auto 1fr;
+        display: flex;
+        align-items: flex-start;
         text-align: left;
-        gap: 0.8rem;
-        align-items: center;
+        gap: 1rem;
     }
     
     .card-image {
-        font-size: 1.8rem;
-        margin-bottom: 0;
+        font-size: 2rem;
+        flex-shrink: 0;
     }
     
     .terrestrial-card h3 {
-        font-size: 0.9rem;
+        font-size: 1rem;
         margin-bottom: 0.2rem;
     }
     
     .terrestrial-card p {
-        font-size: 0.7rem;
-        margin-bottom: 0;
+        font-size: 0.8rem;
     }
     
     .terrestrial-card small {
